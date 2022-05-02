@@ -5,6 +5,7 @@ input:
     keys: the keys of the normalized image dictionary (get image names)
 output:
     indices of relevant images to the task in keys
+    [[condition 0[channel 0[], channel 1[]]], [condition 1[channel0[], channel1[]]]]
 """
 def getRelevantImg(task:str, taskDict, conditionRegexDict, chRegexDict, keys:list):
     conditions = taskDict[task][0]
